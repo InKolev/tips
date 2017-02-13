@@ -19,6 +19,7 @@ P.S: All these commands are tested on `git version 2.7.4 (Apple Git-66)`.
 * [List all the conflicted files](#list-all-the-conflicted-files)
 * [List of all files changed in a commit](#list-of-all-files-changed-in-a-commit)
 * [Unstaged changes since last commit](#unstaged-changes-since-last-commit)
+* [Unstage all files staged for commit](#unstage-all-files-staged-for-commit)
 * [Changes staged for commit](#changes-staged-for-commit)
 * [Show both staged and unstaged changes](#show-both-staged-and-unstaged-changes)
 * [List all branches that are already merged into master](#list-all-branches-that-are-already-merged-into-master)
@@ -201,6 +202,11 @@ git diff-tree --no-commit-id --name-only -r <commit-ish>
 ## Unstaged changes since last commit
 ```sh
 git diff
+```
+
+## Unstage all files staged for commit
+```sh
+git reset HEAD -- .
 ```
 
 ## Changes staged for commit
